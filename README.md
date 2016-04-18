@@ -10,25 +10,25 @@ I made using intellij 14 on windows in java 8, however it should work on mac and
 The project is command line only but you can either choose to generate a random hand of 7 tiles, or input your own hand to optimize.
 
 The output should look something like this:
-	Scrabble optimizer!
-	Would you like to:
-		1: Enter a bag of tiles to use
-		2: Generate a bag
-	Enter choice: 
-	2
-	EZTPESY
-	Possible words from this set of tiles: 
-		espy
-		yet
-		zees
-		zest
-		zesty
-		more possible words not shown (in this readme)...
-	The highest scoring word is: zesty = 17 points
-	Would you like to run again? (y/n)
-	n
-
-	Process finished with exit code 0
+		Scrabble optimizer!
+		Would you like to:
+			1: Enter a bag of tiles to use
+			2: Generate a bag
+		Enter choice: 
+		2
+		EZTPESY
+		Possible words from this set of tiles: 
+			espy
+			yet
+			zees
+			zest
+			zesty
+			more possible words not shown (in this readme)...
+		The highest scoring word is: zesty = 17 points
+		Would you like to run again? (y/n)
+		n
+	
+		Process finished with exit code 0
 The IOS app:
 	I developed it in xcode 7.2.1 for OSX in swift 2
 
