@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ignApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Yaq-pQ-Jpd">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="9rY-0T-o5J"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="veP-I4-KeE"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Yaq-pQ-Jpd" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="5bX-q4-sbd"/>
+                            <constraint firstItem="Yaq-pQ-Jpd" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="FHS-vC-l0q"/>
+                            <constraint firstItem="Yaq-pQ-Jpd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-12" id="kjR-Yo-7Ts"/>
+                            <constraint firstItem="Yaq-pQ-Jpd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nTp-r6-APw"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="Yaq-pQ-Jpd"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="5bX-q4-sbd"/>
+                                <exclude reference="FHS-vC-l0q"/>
+                                <exclude reference="kjR-Yo-7Ts"/>
+                                <exclude reference="nTp-r6-APw"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="Yaq-pQ-Jpd"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="5bX-q4-sbd"/>
+                                <include reference="FHS-vC-l0q"/>
+                                <include reference="kjR-Yo-7Ts"/>
+                                <include reference="nTp-r6-APw"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="tblArticles" destination="Yaq-pQ-Jpd" id="0Au-KE-xg1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="766.5" y="258"/>
+        </scene>
+        <!--Web View Controller-->
+        <scene sceneID="dmV-Bo-Vfj">
+            <objects>
+                <viewController storyboardIdentifier="WebViewController" id="1cm-bN-UCi" customClass="WebViewController" customModule="ignApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="sVg-Ua-t25"/>
+                        <viewControllerLayoutGuide type="bottom" id="PJ7-pO-3YQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zmM-KJ-zEm">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AKE-3U-hTo">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                            </webView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="87V-LP-sWW">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <items>
+                                    <navigationItem title="Article" id="mlC-hp-8ns">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="3eN-Bk-qVg">
+                                            <connections>
+                                                <segue destination="BYZ-38-t0r" kind="presentation" id="yKy-Ds-akZ"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="AKE-3U-hTo" firstAttribute="top" secondItem="87V-LP-sWW" secondAttribute="bottom" id="AHR-83-0xK"/>
+                            <constraint firstItem="AKE-3U-hTo" firstAttribute="bottom" secondItem="PJ7-pO-3YQ" secondAttribute="top" id="JkI-h4-j1l"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="87V-LP-sWW" secondAttribute="trailing" constant="-20" id="OP1-Ms-7N5"/>
+                            <constraint firstItem="AKE-3U-hTo" firstAttribute="trailing" secondItem="87V-LP-sWW" secondAttribute="trailing" id="dlx-6O-wCJ"/>
+                            <constraint firstItem="87V-LP-sWW" firstAttribute="top" secondItem="zmM-KJ-zEm" secondAttribute="topMargin" id="jRr-l5-Sba"/>
+                            <constraint firstItem="87V-LP-sWW" firstAttribute="leading" secondItem="zmM-KJ-zEm" secondAttribute="leadingMargin" constant="-20" id="kpp-6x-0aP"/>
+                            <constraint firstItem="AKE-3U-hTo" firstAttribute="leading" secondItem="87V-LP-sWW" secondAttribute="leading" id="qAs-xE-Wlv"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="AKE-3U-hTo"/>
+                                <exclude reference="87V-LP-sWW"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="OP1-Ms-7N5"/>
+                                <exclude reference="jRr-l5-Sba"/>
+                                <exclude reference="kpp-6x-0aP"/>
+                                <exclude reference="AHR-83-0xK"/>
+                                <exclude reference="JkI-h4-j1l"/>
+                                <exclude reference="dlx-6O-wCJ"/>
+                                <exclude reference="qAs-xE-Wlv"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="AKE-3U-hTo"/>
+                                <include reference="87V-LP-sWW"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="OP1-Ms-7N5"/>
+                                <include reference="jRr-l5-Sba"/>
+                                <include reference="kpp-6x-0aP"/>
+                                <include reference="AHR-83-0xK"/>
+                                <include reference="JkI-h4-j1l"/>
+                                <include reference="dlx-6O-wCJ"/>
+                                <include reference="qAs-xE-Wlv"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="AKE-3U-hTo" id="WLY-Tz-lcE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ilg-W0-8BY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1537.5" y="258"/>
+        </scene>
+    </scenes>
+    <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+</document>
