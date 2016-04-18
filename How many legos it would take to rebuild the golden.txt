@@ -1,0 +1,26 @@
+How many legos it would take to rebuild the golden gate bridge?
+
+Author: Bennett Rasmussen
+
+For me to answer this question I'll have to assume a few things about the problem that were not made clear:
+	This new lego golden gate bridge will not be anywhere near as strong as the real one.
+	Building off the last assumption, I will also ignore the original weight of the bridge and just focus on volume.
+	I will use the most basic lego building block to keep it as simple as possible.
+	I will ignore cosmetic fixtures such as street lights, trash cans etc.
+
+Alright, so the short answer to the question is: 63,851,183,102 legos to rebuild the golden gate bridge!
+
+Here's the long answer:
+	So how big exactly is a regular lego brick?
+		The dimensions are 31.8 x 15.8 x 9.6 mm thus making the volume of a single brick 4823.424 mm^3 or 0.000004823424 m^3(not including the height of the knobs becuase it will be irrelavent when the bricks are stacked)
+		dimensions are according to http://www.robertcailliau.eu/Lego/Dimensions/zMeasurements-en.xhtml
+
+	Now to recreate the golden gate bridge with legos after its destruction I need to find its volume to calculate how many legos will be needed.
+		Stats according to http://goldengatebridge.org/research/factsGGBDesign.php
+			Total concrete volume: 297,475m^3
+			The amount of steel used on the bridge was 83,000 tons, however I could not find the density for the steel they used, so assuming the density of the steel is  7.8 - 7.9 t/m³ (which is for common grades of steel) that 7.9t/m^3 = 83000t/Volume m^3 = 10506.329 m^3
+
+		Total volume of the bridge 10506.32 + 297475 = 307981.329 m^3
+
+	Finally, with the correct info, all that should be left is to divide the total volume of the bridge by the volume of one brick.
+		So, it would take 307981.329 m^3/0.000004823424 m^3 = 63851183101.46485 or 63,851,183,102 legos to rebuild the golden gate bridge! However, I imagine this would just make it way easier for the Avengers to destroy it a second time.
