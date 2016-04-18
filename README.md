@@ -1,8 +1,8 @@
 # CodeFoo6
 
 This repo contains 2 projects:
-	A scrabble hand optimizer made in jave
-	A native iphone app that pulls a list of articles and videos and displays them
+	A scrabble hand optimizer made in java 
+	and native iphone app that pulls a list of articles and videos and displays them
 
 The Scrabble project:
 I made using intellij 14 on windows in java 8, however it should work on mac and linux (not tested)
