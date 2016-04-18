@@ -16,6 +16,7 @@
 		7C6F11061CC30F77005BBEF8 /* ignAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6F11051CC30F77005BBEF8 /* ignAppUITests.swift */; };
 		7C6F11141CC31637005BBEF8 /* IGNService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6F11131CC31637005BBEF8 /* IGNService.swift */; };
 		7CA4CFFD1CC4B16F002CEEC2 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA4CFFC1CC4B16F002CEEC2 /* WebViewController.swift */; };
+		7CA4CFFF1CC5605B002CEEC2 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA4CFFE1CC5605B002CEEC2 /* Article.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		7C6F11071CC30F77005BBEF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7C6F11131CC31637005BBEF8 /* IGNService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IGNService.swift; sourceTree = "<group>"; };
 		7CA4CFFC1CC4B16F002CEEC2 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		7CA4CFFE1CC5605B002CEEC2 /* Article.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				7C6F10F11CC30F77005BBEF8 /* Info.plist */,
 				7C6F11131CC31637005BBEF8 /* IGNService.swift */,
 				7CA4CFFC1CC4B16F002CEEC2 /* WebViewController.swift */,
+				7CA4CFFE1CC5605B002CEEC2 /* Article.swift */,
 			);
 			path = ignApp;
 			sourceTree = "<group>";
@@ -267,6 +270,7 @@
 				7C6F10E61CC30F77005BBEF8 /* AppDelegate.swift in Sources */,
 				7C6F11141CC31637005BBEF8 /* IGNService.swift in Sources */,
 				7CA4CFFD1CC4B16F002CEEC2 /* WebViewController.swift in Sources */,
+				7CA4CFFF1CC5605B002CEEC2 /* Article.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

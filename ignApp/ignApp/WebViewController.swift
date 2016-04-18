@@ -9,6 +9,7 @@
 import UIKit
 
 var currentURL: String = ""
+var currentArticleName: String = ""
 
 class WebViewController: UIViewController {
     @IBOutlet var webView: UIWebView!
