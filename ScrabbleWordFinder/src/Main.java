@@ -3,17 +3,23 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 /**
- * Created by Ben on 4/16/2016.
+ * Created on 4/16/2016.
+ * Test runner class for scrabble optimizer. This
+ * is where the use interacts with the program and cheats in scrabble.
+ * @author Ben Rasmussen
  */
 public class Main {
+    //Storage for the games dictionary
     public static ArrayList<String> dictionary;
 
     public static void main(String[] args) {
+        //fill dictionary and initialize bag
         fillDictionary();
         BagOfTiles tileBag = new BagOfTiles();
         tileBag.shuffle();
         Scanner inputReader = new Scanner(System.in);
 
+        //run as many times as the user wants
         char runAgain = 'y';
         while (runAgain == 'y' || runAgain == 'Y') {
             tileBag.shuffle();
@@ -51,6 +57,7 @@ public class Main {
         }
     }
 
+    //fill dictionary arraylist from dictionary.txt
     public static void fillDictionary() {
         dictionary = new ArrayList<>();
 

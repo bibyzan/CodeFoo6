@@ -3,11 +3,18 @@ import java.io.File;
 import java.util.*;
 
 /**
- * Created by Ben on 4/16/2016.
+ * Created on 4/16/2016.
+ * Class containing an array of tiles to be used in a scrabble game
+ * @author Ben Rasmussen
  */
 public class BagOfTiles extends ArrayList<Tile> {
+    //map reference used for finding points awarded for a letter
     public static HashMap<String, Integer> letterValues;
 
+    /**
+     * Constructor for the class, uses a txt file containing letters, their
+     * point value, and how many should be in a scrabble bag to fill this arraylist
+     */
     public BagOfTiles() {
         super();
 
@@ -34,6 +41,7 @@ public class BagOfTiles extends ArrayList<Tile> {
         }
     }
 
+    //randomize bag
     public void shuffle() {
         Collections.shuffle(this);
     }

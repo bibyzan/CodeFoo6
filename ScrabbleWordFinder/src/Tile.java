@@ -1,5 +1,8 @@
 /**
- * Created by Ben on 4/16/2016.
+ * Created on 4/16/2016.
+ * Class made to represent a scrabble tile.
+ * Contains a letter and value for it
+ * @author Ben Rasmussen
  */
 public class Tile {
     private String letter;
