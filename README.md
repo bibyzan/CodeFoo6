@@ -10,6 +10,7 @@ I made using intellij 14 on windows in java 8, however it should work on mac and
 The project is command line only but you can either choose to generate a random hand of 7 tiles, or input your own hand to optimize.
 
 The output should look something like this:
+
 		Scrabble optimizer!
 		Would you like to:
 			1: Enter a bag of tiles to use
@@ -30,6 +31,7 @@ The output should look something like this:
 	
 		Process finished with exit code 0
 The IOS app:
+
 	I developed it in xcode 7.2.1 for OSX in swift 2
 
 	The app pulls a list of Articles and videos then displays them in a UIListView
